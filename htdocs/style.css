@@ -1,19 +1,64 @@
+@media screen and (max-width: 640px) {}
+/* AFFICHAGE index */
 
-.card-img{
-    width: 50px;
+body {
+    background-color: rgba(0, 0, 0, 0.082);
 }
-.like button {
 
-    border-radius: 5px;
-    border: 1px solid grey;
-    width: 100px;
-    height: 100px;
+
+.navbar {
     background-color: white;
 }
 
-*{
-    box-sizing: border-box;
+.container {
+    margin-top: 10vh;
 }
+
+
+.col-md-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.box-product{
+
+    width: 60vw;
+    margin-left: 10vw;
+    border-radius: 15px;
+}
+
+.card-img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+.col-md-2 .like {
+
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 70px;
+    height: 75px;
+    background-color: white;
+}
+
+.like {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.modal-content{
+
+
+}
+
+/* AFFICHAGE modal */
+
+
+ /* *{
+    box-sizing: border-box;
+} */
 
 .popup {
     display: none;
@@ -35,36 +80,40 @@
     left: 50%;
     top: 5%;
     transform: translateX(-50%);
-    height: 640px;
-    max-height: 720px;
-    min-width: 520px;
-    width: 45%;
+    height: auto;
+    min-width: auto;
+    width: auto;
     border: 1px solid rgb(22, 21, 21);
     display: flex;
     flex-direction: column;
     opacity: 0;
+    overflow: scroll;
 }
 
 .popup-content.active {
 
     opacity: 1;
     top: 10%;
-    width: 90%;
+    width: 50%;
     height: auto;
+    bottom: 10%;
     
 }
 
 .popup-header {
     
-    background-color: rgb(55, 66, 223);
+    background-color: white;
     color: black;
 }
 
 .popup-body{
-    height: 80%;
+    height: auto;
     padding: 2%;
-    overflow-y: auto;
     background-color: white;
+}
+
+.popup-body #carouselExampleIndicators {
+    width: 100%;
 }
 
 .popup-footer{
