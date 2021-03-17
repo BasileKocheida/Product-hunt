@@ -11,4 +11,68 @@
     background-color: white;
 }
 
+*{
+    box-sizing: border-box;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 1000;
+}
+
+.popup.active{
+    display: inline-block;
+}
+
+.popup-content{
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    height: 640px;
+    max-height: 720px;
+    min-width: 520px;
+    width: 45%;
+    border: 1px solid rgb(22, 21, 21);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.popup-content.active {
+
+    opacity: 1;
+    top: 10%;
+    width: 90%;
+    height: auto;
+    
+}
+
+.popup-header {
+    
+    background-color: rgb(55, 66, 223);
+    color: black;
+}
+
+.popup-body{
+    height: 80%;
+    padding: 2%;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.popup-footer{
+
+    height: 10%;
+    padding: 2%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(233, 233, 233);
+}
 
